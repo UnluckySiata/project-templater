@@ -1,0 +1,21 @@
+[package]
+name = "project-templater"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Mikołaj Siatkowski <msiatkowski@tutanota.com"]
+description = "Simple cli tool for creating repositories from templates with git"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+toml = "0.7.3"
+serde = { version = "1", features = ["serde_derive"] }
+git2 = "0.17.1"
+clap = "4.2.7"
+
+[[bin]]
+name = "pt"
+path = "src/main.rs"
+
