@@ -43,7 +43,7 @@ should have the following structure
 # For example this is the template aliased as "name" sourced from
 # github repository user/example (but any git repo, remote or local, is ok)
 [repo.name]
-source = https://github.com/user/example
+source = "https://github.com/user/example"
 ```
 
 
