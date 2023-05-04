@@ -12,8 +12,8 @@ fn cli() -> ArgMatches {
         .subcommand(
             Command::new("init")
             .about("Initialize project")
-            .arg(arg!([TEMPLATE] "Name of template, specified in config.toml"))
-            .arg(arg!([NAME] "Target project name"))
+            .arg(arg!(<TEMPLATE> "Name of template, specified in config.toml"))
+            .arg(arg!(<NAME> "Target project name"))
             .arg_required_else_help(true)
         )
         .get_matches()
