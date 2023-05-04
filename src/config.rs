@@ -34,7 +34,7 @@ fn init_config() -> Result<PathBuf, Error> {
             [repo] \n\
             # Here's a way to add a template aliased \"name\" from github \n\
             # [repo.name] \n\
-            # source = https://github.com/user/template-name \n\
+            # source = \"https://github.com/user/template-name\" \n\
             ";
         if let Err(e) = fs::write(&path, example) {
             return Err(Error::IoError(e))
